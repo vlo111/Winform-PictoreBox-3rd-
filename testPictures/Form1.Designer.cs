@@ -39,9 +39,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bg_check = new DevExpress.XtraEditors.CheckEdit();
             this.fg_check = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg_check.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fg_check.Properties)).BeginInit();
             this.SuspendLayout();
@@ -51,12 +53,9 @@
             this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox.Location = new System.Drawing.Point(12, 12);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(811, 401);
+            this.pictureBox.Size = new System.Drawing.Size(1021, 401);
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
-            this.pictureBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.imageBox_MouseDown);
-            this.pictureBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseMove);
-            this.pictureBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imageBox_MouseUp);
             // 
             // label1
             // 
@@ -148,30 +147,43 @@
             this.label10.TabIndex = 10;
             this.label10.Text = "label10";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1021, 401);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
+            // 
             // bg_check
             // 
-            this.bg_check.Location = new System.Drawing.Point(728, 420);
+            this.bg_check.Location = new System.Drawing.Point(724, 420);
             this.bg_check.Name = "bg_check";
-            this.bg_check.Properties.Caption = "bg";
+            this.bg_check.Properties.Caption = "BG";
             this.bg_check.Size = new System.Drawing.Size(75, 20);
-            this.bg_check.TabIndex = 11;
+            this.bg_check.TabIndex = 12;
             // 
             // fg_check
             // 
-            this.fg_check.Location = new System.Drawing.Point(728, 447);
+            this.fg_check.Location = new System.Drawing.Point(724, 447);
             this.fg_check.Name = "fg_check";
-            this.fg_check.Properties.Caption = "fg";
+            this.fg_check.Properties.Caption = "FG";
             this.fg_check.Size = new System.Drawing.Size(75, 20);
-            this.fg_check.TabIndex = 12;
+            this.fg_check.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(835, 472);
+            this.ClientSize = new System.Drawing.Size(1045, 472);
             this.Controls.Add(this.fg_check);
             this.Controls.Add(this.bg_check);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -186,6 +198,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bg_check.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fg_check.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -206,6 +219,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private DevExpress.XtraEditors.CheckEdit bg_check;
         private DevExpress.XtraEditors.CheckEdit fg_check;
     }
